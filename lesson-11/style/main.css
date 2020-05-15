@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.container{
+  margin: 0 auto;
+  width: 970px;
+  padding: 35px 15px;
+}
+
+.header{
+  width: 100%;
+  padding: 30px 50px;
+  background: #fff;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  width: 168.1px;
+  height: 22.69px;
+}
+
+.search{
+  display: flex;
+  justify-content:flex-start;
+}
+
+.search-input{
+  padding: 11.5px 10px;
+  min-width: 325px;
+  border: 1px solid #E0E0E0;
+
+}
+
+
+
+.btn{
+  padding: 10px 17px;
+  background: rgba(0, 0, 0, 0.0001);
+  border: 1px solid #757575;
+}
+
+.bg-btn{
+  background: blue;
+}
+
+.search-btn{
+  border: none;
+  outline: none;
+  border-radius: 0px 3px 3px 0;
+}
+
+.btn-pad{
+  border-radius: 3px;
+}
+
+/*Nav*/
+
+.nav{
+  width: 100%;
+  background: #F4F4F4;
+  padding: 10px 0;
+}
+
+.nav-menu{
+  display: inline-block;
+  margin: 0px 50px;
+}
+
+.nav-menu_item{
+  float: left;
+  margin-right: 25px;
+}
+
+.nav-menu_link{
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #737270;
+}
+
+.header-right{
+  display: flex;
+  align-items: center;
+}
+
+.iconHeader{
+  width: 26px;
+  height: 28px;
+}
+
+.iconHeader img{
+  width: 100%;
+  height: auto;
+}
+
+.header-right button, .iconHeader{
+ margin-right: 27px;
+}
+
+.header-right div:last-child{
+  margin-right: 0;
+}
+
+/*Content*/
+.content{
+  width: 100%;
+}
+
+.title{
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 31px;
+  text-align: center;
+  color: #000000;
+}
+
+.content-menu{
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-menu_link{
+  display: block;
+  width: 220px;
+  height: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.004px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.28008px;
+  color: #878786;
+  margin-bottom: 10px;
+}
+
+.content-menu_link:hover{
+  color: #007AFF;
+}
+
+.content-block{
+  border: 1px solid #C6C6C5;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.content-input{
+  margin:20px 0px;
+}
+
+.content-name{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.label{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.004px;
+  line-height: 17px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.28008px;
+  color: #000000;
+}
+
+.input{
+  border: 1px solid #C6C6C5;
+  padding: 5px 10px;
+  margin: 10px 0;
+}
+
+.input-min{
+  width: 151px;
+}
+
+.content-title{
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.input-title{
+  width: 100%;
+}
+
+.businessMailingAdd-title{
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #C6C6C5;
+}
+
+.grid{
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.grid-card{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 10px 0;
+}
+
+.grid-title{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  color: #1C1C1B;
+}
+
+.grid-card_link{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  color: #1C1C1B;
+  display:flex;
+  align-items: center;
+}
+
+.phone-text{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14.004px;
+  line-height: 17px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.28008px;
+  color: #878786;
+}
+
+.footer{
+  margin: 0px 50px
+}
+
+.content-footer{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+.content-footer_text{
+  font-size: 14.004px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.28008px;
+  color: #878786;
+  padding: 10px 0px;
+}
+
+.footer-bottom{
+  width: 100%;
+  border-top: 1px solid #C6C6C5;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0px;
+}
+
+.footer-bottom_text{
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: center;
+  color: #878786;
+  margin: 10px;
+}
+
+
+.grid-card_footer:last-child{
+  padding-right: 0;
+}
+
+.grid-card_img{
+  width: 22px;
+  height: 21px;
+  margin-right: 7px;
+}
+
+.grid-card_img img{
+  width: 100%;
+  height: auto;
+}
