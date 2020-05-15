@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2 span{
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+h2 span.subtitle {
+    display: block;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.upp {
+    text-transform: uppercase;
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+}
+
+.inner {
+    max-width: 1180px;
+    width: 98%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient(to right, #fff 50%, #509f2c 50%);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.header-logo {
+    padding: 5px 0;
+}
+
+.header-menu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-menu li {
+    padding: 0 1rem;
+}
+
+.header-menu a {
+    position: relative;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: -1px;
+    transition: color .5s;
+}
+
+.header-menu a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #509f2c;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.header-menu a:hover {
+    color: #509f2c;
+}
+
+.header-menu a:hover:after {
+    opacity: 1;
+}
+
+.header-contacts {
+    width: 220px;
+    background-color: #509f2c;
+    text-align: center;
+}
+
+.header-contacts a {
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    transition: opacity .5s;
+}
+
+.header-contacts a:hover {
+    opacity: .7;
+}
+
+.header-contacts_tel a {
+    line-height: 55px;
+    padding-left: 20px;
+}
+
+.header-contacts_tel a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../images/tel.png");
+    width: 14px;
+    height: 18px;
+}
+
+.header-contacts_callback {
+    background-color: #d8c938;
+}
+
+.header-contacts_callback a {
+    letter-spacing: -1px;
+    line-height: 30px;
+    padding-right: 20px;
+}
+
+.header-contacts_callback a:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -5px;
+    background-image: url("../images/arr-1.png");
+    width: 6px;
+    height: 10px;
+}
+
+/*========= WHY_WE BLOCK STYLES ==========*/
+
+.why_we {
+    padding: 7rem 0;
+    background: url("../images/why.jpg") no-repeat;
+    background-size: cover;
+}
+
+.why_we h2 {
+    color: #fff;
+}
+
+.why_we h2 span {
+    position: relative;
+    padding: 0 10px;
+}
+
+.why_we h2 span.title::before {
+    content: "";
+    position: absolute;
+    left: -300px;
+    top: 50%;
+    margin-top: -10px;
+    background-image: url("../images/line-left.png");
+    width: 300px;
+    height: 20px;
+}
+
+.why_we h2 span.title::after {
+    content: "";
+    position: absolute;
+    right: -300px;
+    top: 50%;
+    margin-top: -10px;
+    background-image: url("../images/line-right.png");
+    width: 300px;
+    height: 20px;
+}
+
+.why_we-reasons {
+    padding-top: 20px;
+}
+
+.reasons-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 2rem auto 0;
+    text-align: center;
+    max-width: 912px;
+    width: 98%;
+    height: 139px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    background-position: center;
+}
+
+.reasons-row:nth-child(1) {
+    background: url("../images/why-1.png") no-repeat;
+}
+
+.reasons-row:nth-child(2) {
+    background: url("../images/why-1.png") no-repeat;
+}
+
+.reasons-row:nth-child(3) {
+    background: url("../images/why-1.png") no-repeat;
+}
+
+.reasons-row:nth-child(4) {
+    background: url("../images/why-1.png") no-repeat;
+}
+
+.reasons-row > * {
+    width: 50%;
+    padding: 45px;
+}
+
+.reasons-row .reasons-row_left {
+    color: #fff;
+}
+
+.reasons-row .reasons-row_right {
+    text-align: left;
+    margin-top: 20px;
+    color: #509f2c;
+}
+
+.reasons-row .reasons-row_left .big {
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+.expect {
+    padding: 7rem 0;
+    background: url("../images/us.jpg") no-repeat;
+    background-size: cover;
+}
+
+.expect h2 {
+    color: #fff;
+}
+
+.expect h2 span {
+    position: relative;
+    padding: 0 10px;
+}
+
+.expect h2 span.title::before {
+    content: "";
+    position: absolute;
+    left: -300px;
+    top: 50%;
+    margin-top: -10px;
+    background-image: url("../images/line-left.png");
+    width: 300px;
+    height: 20px;
+}
+
+.expect h2 span.title::after {
+    content: "";
+    position: absolute;
+    right: -300px;
+    top: 50%;
+    margin-top: -10px;
+    background-image: url("../images/line-right.png");
+    width: 300px;
+    height: 20px;
+}
+
+.expect .expect-list {
+    padding-top: 20px;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.expect-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 2rem 0 0;
+    text-align: left;
+}
+
+.expect-row_image {
+    width: 150px;
+    height: 150px;
+    margin-right: 30px;
+}
+
+.expect-row_image img {
+    width: 150px;
+    height: 150px;
+}
+
+.expect-row_description {
+    position: relative;
+    padding-left: 30px;
+}
+
+.expect-row_description::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 76px;
+    margin-top: -38px;
+    background-color: #fff;
+}
+
+/*========= TRUCKS BLOCK STYLES ==========*/
+
+.trucks {
+    padding: 7rem 0;
+    background: #fff;
+}
+
+.trucks h2 {
+    color: #509f2c;
+}
+
+.trucks h2 span {
+    position: relative;
+    padding: 0 10px;
+}
+
+.trucks h2 span.title::before {
+    content: "";
+    position: absolute;
+    left: -300px;
+    top: 50%;
+    margin-top: -10px;
+    background-image: url("../images/line-left.png");
+    width: 300px;
+    height: 20px;
+}
+
+.trucks h2 span.title::after {
+    content: "";
+    position: absolute;
+    right: -300px;
+    top: 50%;
+    margin-top: -10px;
+    background-image: url("../images/line-right.png");
+    width: 300px;
+    height: 20px;
+}
+
+.trucks .trucks-list {
+    padding-top: 20px;
+}
+
+.trucks-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 2rem auto 0;
+    text-align: center;
+    max-width: 920px;
+    width: 98%;
+}
+
+.trucks-item {
+    position: relative;
+    padding: 20px 0;
+    height: 170px;
+    width: 180px;
+}
+
+.trucks-item::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    margin-left: -25px;
+    top: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .1;
+}
+
+.trucks-item .trucks-item_image {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.trucks-item .trucks-item_image:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 2px;
+    background-color: #ccc;
+}
+
+.trucks-item .trucks-item_name {
+    margin-top: 20px;
+}
+
+/*footer*/
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+.footer-logo {
+    padding: 5px 0;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-center .copyright {
+    color: #509f2c;
+    margin-bottom: 10px;
+}
+
+.footer-center a {
+    position: relative;
+    color: #f7e63e;
+}
+
+.footer-center a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #f7e63e;
+    transition: opacity .5s;
+}
+
+.footer-center a:hover::after {
+    opacity: 0;
+}
+
+.footer-developer {
+    text-align: center;
+    padding-right: 60px;
+}
+
+.footer-developer a {
+    display: block;
+    margin-top: 5px;
+    color: #f0b322;
+}
+
+.footer-developer div {
+    position: relative;
+}
+
+.footer-developer div::after {
+    content: "";
+    position: absolute;
+    right: -60px;
+    top: 50%;
+    margin-top: -25px;
+    background: url("../images/fresh.jpg") no-repeat;
+    width: 50px;
+    height: 49px;
+}
