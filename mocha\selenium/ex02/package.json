@@ -1,0 +1,19 @@
+{
+  "name": "jsm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/cli": "^5.20.1"
+  },
+  "dependencies": {
+    "chromedriver": "^80.0.1",
+    "mocha": "^7.1.0",
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  }
+}

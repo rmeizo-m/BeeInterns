@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+li{
+  list-style: none;
+}
+
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 41px;
+    color: #000;
+    padding-top: 50px;
+    margin: 50px 0px 30px 0px;
+}
+
+.tabs {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    color: #5D5D5D;
+}
+
+.tabs-item {
+    position: relative;
+}
+
+.tabs-item::before {
+    content: "";
+    position: absolute;
+    left: -13px;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background: #0179FF;
+}
+
+.tabs-item input {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tabs-item span {
+    display: block;
+    position: relative;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 15px 35px 16px;
+    background: #F5F5F5;
+    color: #000;
+    border: 1px solid #E8E8E8;
+    cursor: pointer;
+}
+
+.tabs-item i {
+    position: absolute;
+    left: 18px;
+    top: 20px;
+    background: url("../image/arrow.svg") no-repeat;
+    width: 10px;
+    height: 6px;
+    transform: rotate(-90deg);
+    transition: .4s;
+}
+
+.tabs-item input:checked ~ i {
+    transform: rotate(0);
+}
+
+.tabs-item div {
+    display: none;
+    padding: 20px;
+}
+
+.tabs-item input:checked + div {
+    display: block;
+}
+
+.tabs-item p {
+    margin-top: 10px;
+}
+
+.tabs-item h3 {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.tabs-item img {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    margin: 30px auto 0;
+}
