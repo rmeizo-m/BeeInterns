@@ -20,6 +20,8 @@ function validate(data) {
       } else if (gender == "female") {
         alert(`Уважаемая ${firstName}, заявка создана`);
       }
-      alert('Форма отправлена');
+      else{
+        alert('Форма отправлена');
+      }
     }
 }
