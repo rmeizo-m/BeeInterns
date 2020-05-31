@@ -18,10 +18,13 @@ h2 {
     text-align: center;
 }
 
+li{
+  list-style-type: none;
+}
+
 h2 span{
     font-weight: normal;
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 48px;
     text-transform: uppercase;
     letter-spacing: -1px;
 }
@@ -29,8 +32,8 @@ h2 span{
 h2 span.subtitle {
     display: block;
     font-weight: normal;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 24px;
+    line-height:32px;
     text-transform: uppercase;
     letter-spacing: -1px;
 }
@@ -39,16 +42,9 @@ h2 span.subtitle {
     text-transform: uppercase;
 }
 
-body {
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin: 0;
-}
-
 .inner {
     max-width: 1180px;
-    width: 98%;
+    padding: 0 10px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -76,7 +72,7 @@ header {
 }
 
 .header-menu li {
-    padding: 0 1rem;
+    padding: 0 10px;
 }
 
 .header-menu a {
@@ -163,7 +159,7 @@ header {
 /*========= WHY_WE BLOCK STYLES ==========*/
 
 .why_we {
-    padding: 7rem 0;
+    padding: 112px 0;
     background: url("../images/why.jpg") no-repeat;
     background-size: cover;
 }
@@ -208,29 +204,12 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    margin: 2rem auto 0;
+    margin: 124px auto 0;
     text-align: center;
     max-width: 912px;
-    width: 98%;
+    padding: 0 10px;
     height: 139px;
-    font-size: 1.5rem;
-    line-height: 2rem;
     background-position: center;
-}
-
-.reasons-row:nth-child(1) {
-    background: url("../images/why-1.png") no-repeat;
-}
-
-.reasons-row:nth-child(2) {
-    background: url("../images/why-1.png") no-repeat;
-}
-
-.reasons-row:nth-child(3) {
-    background: url("../images/why-1.png") no-repeat;
-}
-
-.reasons-row:nth-child(4) {
     background: url("../images/why-1.png") no-repeat;
 }
 
@@ -250,12 +229,15 @@ header {
 }
 
 .reasons-row .reasons-row_left .big {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.row-padding{
+    padding: 112px 0;
 }
 
 .expect {
-    padding: 7rem 0;
     background: url("../images/us.jpg") no-repeat;
     background-size: cover;
 }
@@ -303,7 +285,7 @@ header {
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
-    margin: 2rem 0 0;
+    margin:32px 0 0;
     text-align: left;
 }
 
@@ -337,7 +319,6 @@ header {
 /*========= TRUCKS BLOCK STYLES ==========*/
 
 .trucks {
-    padding: 7rem 0;
     background: #fff;
 }
 
@@ -381,10 +362,10 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    margin: 2rem auto 0;
+    margin:32px auto 0;
     text-align: center;
     max-width: 920px;
-    width: 98%;
+    padding: 0 10px;
 }
 
 .trucks-item {
