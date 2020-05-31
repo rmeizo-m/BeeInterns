@@ -4,10 +4,17 @@
   С помощью которой можно создать объект
   { profession: 'hero', name: 'Кларк', secondName: 'Кент' }
 */
+
+let person ={
+  "profession": "",
+  "name": "",
+  "secondName": ""
+}
+
 function Men(name, secondName){
-    this.profession = 'hero';
+    this.profession = "hero";
     this.name = name;
-    this.secondName:secondName;
+    this.secondName = secondName;
 }
 
 
