@@ -12,40 +12,37 @@ input.addEventListener("input", () => {
   }
 });
 
+let carent = ['Привет, меня зовут Чат-бот, а как зовут тебя?'];
 
-const carent = [
-  'Введи команду /start, для начала общения.'
-];
+  inputBox.addEventListener("click", () =>{
+    const inputText = input.value;
+    if(inputText === "/start"){
+        addCar = carent.push('Привет, меня зовут Чат-бот, а как зовут тебя?');
+    } else if(inputText.startsWith("/name:")){
+      carent.push('Привет, (name), приятно познакомится.');
+    } else if (inputText.startsWith("/number:")) {
+      alert('snumber');
+    } else if (inputText === "/stop") {
+      carent.push('Всего доброго, если хочешь поговорить пиши /start');
+    } else if (inputText === "/weather") {
 
-inputBox.addEventListener("click", () =>{
-  const inputText = input.value;
+    } else{
+      alert('else');
+    }
+  });
 
-  if(inputText === "/start"){
-    carent.push('Привет, меня зовут Чат-бот, а как зовут тебя?');
-  } else if(inputText.startsWith("/name:")){
-    carent.push('Привет, (name), приятно познакомится.');
-  } else if (inputText.startsWith("/number:")) {
-    alert('snumber');
-  } else if (inputText === "/stop") {
-    carent.push('Всего доброго, если хочешь поговорить пиши /start');
-  } else if (inputText === "/weather") {
-
-  } else{
-    alert('else');
+    function addDiv(){
+      for (const item of carent) {
+        addMessage(item);
+      }
   }
-});
 
-function addDiv(){
-  for (const item of carent) {
-    addMessage(item);
+  function addMessage(el){
+    let elDiv = document.createElement("div");
+    elDiv.classList.add = "chat_text";
+    elDiv.innerHTML = el;
+    output.appendChild(elDiv);
   }
-}
 
-function addMessage(item){
-  let elDiv = document.createElement("div");
-  elDiv.className = "chat_text";
-  elDiv.innerHTML=item;
-  output.appendChild(elDiv);
-}
-
+// addMessage();
 addDiv();
