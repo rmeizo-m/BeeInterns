@@ -3,25 +3,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const output = document.querySelector(".chat");
   const inputBox = document.querySelector(".btn");
   const input = document.querySelector(".message__input");
+  const indicator = document.querySelector("#indicator");
+
   let start = false;
-  let num = true;
+  let num = false;
 
-  input.addEventListener("input", disabledHangle);
-
-  function disabledHangle(e){
+  input.addEventListener("input", () => {
     if (input.value == ""){
       inputBox.style.background = `url("./images/path.svg") no-repeat`;
       inputBox.setAttribute("disabled", "true");
+      indicator.className = "";
     } else {
       inputBox.style.background = `url("./images/path1.svg") no-repeat`;
       inputBox.removeAttribute("disabled");
+      indicator.className = "loading";
     }
-  }
+  });
 
 
-  inputBox.addEventListener("click", addHandler);
 
-  function addHandler(e){
+  inputBox.addEventListener("click", (e) => {
     let inputText = input.value;
     e.preventDefault();
 
@@ -89,7 +90,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
     input.value="";
-  }
+    inputBox.style.background = `url("./images/path.svg") no-repeat`;
+    indicator.className = "";
+
+  });
 
 
   function addMessage(user, text){

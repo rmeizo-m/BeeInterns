@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid #fff;
 }
 
 body{
@@ -10,10 +9,16 @@ body{
   background: #000;
 }
 
-.container{
+.container, .inner{
+  max-width: 700px;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.inner{
+  height: 92.222vh;
 }
 
 .chat, .message__form{
@@ -36,7 +41,6 @@ body{
 
 
 .message{
-  background-color: #fff;
   width: 100%;
 }
 
@@ -45,6 +49,7 @@ body{
   height: 64px;
   align-items: center;
   justify-content: flex-end;
+  background-color: #fff;
 }
 
 .message__input{
@@ -89,4 +94,43 @@ body{
   border-radius: 35px;
   border: 1px solid red;
   background: yellow;
+}
+
+.loading:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  animation: ellipsis steps(4,end) 900ms infinite;
+  content: "\2026"; /
+  width: 0px;
+  font-family: halant;
+  font-size: 20px;
+  color: rgb(146,146,146);
+}
+
+@keyframes ellipsis {
+  to {
+    width: 20px;
+  }
+}
+
+@media (min-width: 500px){
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container{
+    height: 90vh;
+  }
+  .message__form{
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  .inner{
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 0px 20px;
+  }
 }
