@@ -31,6 +31,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  overflow:auto;
 }
 
 
@@ -61,4 +62,31 @@ body{
   background: url("../images/path.svg") no-repeat;
   border: none;
   outline: none;
+}
+
+.chat__item{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.avatar{
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  border-radius: 50%;
+}
+
+.avatar img{
+  width: 100%;
+  height: auto;
+}
+
+.chat__message{
+  margin-left: 10px;
+  padding: 25px 50px;;
+  border-radius: 35px;
+  border: 1px solid red;
+  background: yellow;
 }
