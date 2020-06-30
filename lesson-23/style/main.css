@@ -1,0 +1,30 @@
+.container{
+  width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.cube{
+  outline: none;
+  border: 1px solid blue;
+  padding: 5px 10px;
+  background: #f9f9f9;
+}
+
+.the-end.active {
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(100%) scaleX(3);
+  }
+  to {
+    transform: translateX(0) scaleX(1);
+  }
+}
